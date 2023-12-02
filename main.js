@@ -20,8 +20,16 @@ function modelLoaded()
     console.log("Pose Net is Working");
 }
 
+function gotPoses(results)
+{
+console.log(results);
+console.log("noseX="+results[0].pose.nose.x);
+console.log("noseY="+results[0].pose.nose.y);
+}
+
 function draw()
 {
+image(video,0,0,300,300);
 
 }
 
